@@ -75,6 +75,11 @@
 
     " Deps {
         Bundle 'gmarik/vundle'
+        Bundle 'Shougo/vimproc', {
+                \ 'build' : {
+                \        'mac' : 'make -f make_mac.mak',
+                \       },
+                \ }
         Bundle 'MarcWeber/vim-addon-mw-utils'
         Bundle 'tomtom/tlib_vim'
         if executable('ag')
@@ -228,7 +233,6 @@
             Bundle 'lukerandall/haskellmode-vim'
             Bundle 'eagletmt/neco-ghc'
             Bundle 'eagletmt/ghcmod-vim'
-            Bundle 'Shougo/vimproc'
             Bundle 'adinapoli/cumino'
             Bundle 'bitc/vim-hdevtools'
         endif
